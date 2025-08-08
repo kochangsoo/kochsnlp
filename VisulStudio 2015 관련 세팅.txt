@@ -1,0 +1,10 @@
+1.C4996 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC. 
+해결방법:Project Properties->C\C++->Preprocessor->Preprocessor Definition and add NO_WARN_MBCS_MFC_DEPRECATION
+
+2.심각도	코드	설명	프로젝트	파일	줄	비표시 오류(Suppression) 상태
+오류	C1010	미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. '#include "stdafx.h"'을(를) 소스에 추가하시겠습니까?	NLPEngine	d:\nlp\nlpengine\nlpengine\nautil.cpp	14	
+해결방법:속성-C/C++-미리컴퍼일된헤더 - 미리 컴파일된 헤더 사용 안함
+
+3.에디터컨트롤에 기본 입력값을 한글로 처리하기 위한 용도
+stdafx.h 헤더 파일에 #include <imm.h> 선언
+프로젝트-속성-링커-입력 imm32.lib 추가 
